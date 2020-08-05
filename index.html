@@ -539,52 +539,54 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
         <form method="GET" class="contact-form">
-          <label class="contact-form-label" for=""
-            ><svg class="contact-form-item-icon" width="12" height="12">
-              <use href="./images/sprite.svg#icon-person-modal"></use></svg
-            >Имя</label
-          >
-          <input
-            type="text"
-            name="user-name"
-            id=""
-            class="contact-form-item"
-            required
-          />
-          <label class="contact-form-label" for=""
-            ><svg class="contact-form-item-icon" width="13" height="13">
-              <use href="./images/sprite.svg#icon-phone-modal"></use></svg
-            >Телефон</label
-          >
-          <input
-            type="tel"
-            name="user-phone"
-            id=""
-            class="contact-form-item"
-            required
-          />
-          <label class="contact-form-label" for=""
-            ><svg class="contact-form-item-icon" width="15" height="12">
-              <use href="./images/sprite.svg#icon-email-modal"></use></svg
-            >Почта</label
-          >
-          <input
-            type="email"
-            name="user-email"
-            id=""
-            class="contact-form-item"
-            required
-          />
-          <textarea
-            name=""
-            id=""
-            placeholder="Комментарий"
-            class="contact-form-item comment"
-          ></textarea>
+          <div class="contact-form-wrapper">
+            <label class="contact-form-label" for="">Имя</label>
+            <input
+              type="text"
+              name="user-name"
+              id=""
+              class="contact-form-item"
+              required
+            />
+            <svg class="contact-form-item-icon">
+              <use href="./images/sprite.svg#icon-person-modal"</use>
+            </svg>
+            
+          </div>
+          <div class="contact-form-wrapper">
+            <label class="contact-form-label" for="">Телефон</label>
+            <input
+              type="tel"
+              name="user-phone"
+              id=""
+              class="contact-form-item"
+              required
+            />
+            <svg class="contact-form-item-icon" width="13" height="13">
+              <use href="./images/sprite.svg#icon-phone-modal"></use>
+            </svg>
+          </div>
+          <div class="contact-form-wrapper">
+            <label class="contact-form-label" for="">Почта</label>
+            <input
+              type="email"
+              name="user-email"
+              id=""
+              class="contact-form-item"
+              required
+            />
+            <svg class="contact-form-item-icon" width="15" height="12">
+              <use href="./images/sprite.svg#icon-email-modal"></use>
+            </svg>
+          </div>
+          <div class="contact-form-wrapper">
+            <textarea name="" id="" class="contact-form-item comment"></textarea>
+            <label class="contact-form-label-comment" for="">Комментарий</label>
+          </div>
           <button type="submit" class="contact-form-btn">Отправить</button>
         </form>
       </div>
