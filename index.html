@@ -544,48 +544,53 @@
         <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
         <form method="GET" class="contact-form">
           <div class="contact-form-wrapper">
-            <label class="contact-form-label" for="">Имя</label>
+            <label class="contact-form-label" for="user-name">Имя</label>
             <input
               type="text"
               name="user-name"
-              id=""
+              id="user-name"
               class="contact-form-item"
               required
             />
             <svg class="contact-form-item-icon">
-              <use href="./images/sprite.svg#icon-person-modal"</use>
+              <use href="./images/sprite.svg#icon-person-form"</use>
             </svg>
-            
           </div>
           <div class="contact-form-wrapper">
-            <label class="contact-form-label" for="">Телефон</label>
+            <label class="contact-form-label" for="user-phone">Телефон</label>
             <input
               type="tel"
               name="user-phone"
-              id=""
+              id="user-phone"
               class="contact-form-item"
               required
             />
-            <svg class="contact-form-item-icon" width="13" height="13">
-              <use href="./images/sprite.svg#icon-phone-modal"></use>
+            <svg class="contact-form-item-icon">
+              <use href="./images/sprite.svg#icon-phone-form"></use>
             </svg>
           </div>
           <div class="contact-form-wrapper">
-            <label class="contact-form-label" for="">Почта</label>
+            <label class="contact-form-label" for="user-email">Почта</label>
             <input
               type="email"
               name="user-email"
-              id=""
+              id="user-email"
               class="contact-form-item"
               required
             />
-            <svg class="contact-form-item-icon" width="15" height="12">
-              <use href="./images/sprite.svg#icon-email-modal"></use>
+            <svg class="contact-form-item-icon">
+              <use href="./images/sprite.svg#icon-email-form"></use>
             </svg>
           </div>
-          <div class="contact-form-wrapper">
+          <div class="contact-form-wrapper text-area">
             <textarea name="" id="" class="contact-form-item comment"></textarea>
             <label class="contact-form-label-comment" for="">Комментарий</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="accept-policy"><span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a>
+            </span></label>
+            
+            
           </div>
           <button type="submit" class="contact-form-btn">Отправить</button>
         </form>

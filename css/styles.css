@@ -658,6 +658,11 @@ html {
 
 .contact-form-wrapper {
   position: relative;
+  margin-bottom: 28px;
+}
+
+.contact-form-wrapper.text-area {
+  margin-bottom: 20px;
 }
 
 .contact-form-item {
@@ -667,7 +672,6 @@ html {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 28px;
 }
 
 .contact-form-label {
@@ -684,10 +688,10 @@ html {
 .contact-form-item-icon {
   position: absolute;
   top: 50%;
-  left: 19px;
+  left: 16px;
   transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   padding: 0;
   display: block;
 }
@@ -713,6 +717,20 @@ html {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--text-color);
+}
+
+.checkbox {
+  margin-bottom: 30px;
+}
+
+.checkbox-text {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--text-color);
+}
+
+.checkbox-link {
+  color: var(--accent-color);
 }
 
 .contact-form-btn {
