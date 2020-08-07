@@ -41,6 +41,14 @@ html {
   margin-left: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 /* Хедер */
 
 .navigation {
@@ -766,7 +774,7 @@ html {
   padding-right: 55px;
   padding-bottom: 10px;
   padding-left: 55px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
