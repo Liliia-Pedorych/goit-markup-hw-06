@@ -544,7 +544,6 @@
         <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
         <form method="GET" class="contact-form">
           <div class="contact-form-wrapper">
-            <label class="contact-form-label" for="user-name">Имя</label>
             <input
               type="text"
               name="user-name"
@@ -552,12 +551,12 @@
               class="contact-form-item"
               required
             />
+            <label class="contact-form-label" for="user-name">Имя</label>
             <svg class="contact-form-item-icon">
               <use href="./images/sprite.svg#icon-person-form"</use>
             </svg>
           </div>
           <div class="contact-form-wrapper">
-            <label class="contact-form-label" for="user-phone">Телефон</label>
             <input
               type="tel"
               name="user-phone"
@@ -565,12 +564,12 @@
               class="contact-form-item"
               required
             />
+            <label class="contact-form-label" for="user-phone">Телефон</label>
             <svg class="contact-form-item-icon">
               <use href="./images/sprite.svg#icon-phone-form"></use>
             </svg>
           </div>
           <div class="contact-form-wrapper">
-            <label class="contact-form-label" for="user-email">Почта</label>
             <input
               type="email"
               name="user-email"
@@ -578,20 +577,19 @@
               class="contact-form-item"
               required
             />
+            <label class="contact-form-label" for="user-email">Почта</label>
             <svg class="contact-form-item-icon">
               <use href="./images/sprite.svg#icon-email-form"></use>
             </svg>
           </div>
           <div class="contact-form-wrapper text-area">
-            <textarea name="" id="" class="contact-form-item comment"></textarea>
-            <label class="contact-form-label-comment" for="">Комментарий</label>
+            <textarea name="comment" id="comment" class="contact-form-item comment"></textarea>
+            <label class="contact-form-label-comment" for="comment">Комментарий</label>
           </div>
           <div class="checkbox">
             <label><input type="checkbox" value="accept-policy"><span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a>
             </span></label>
-            
-            
-          </div>
+         </div>
           <button type="submit" class="contact-form-btn">Отправить</button>
         </form>
       </div>
