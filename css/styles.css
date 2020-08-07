@@ -776,7 +776,6 @@ html {
   height: 15px;
   border: 2px solid var(--title-color);
   border-radius: 2px;
-  /* transition-property:  background-image; */
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -819,16 +818,30 @@ html {
   cursor: pointer;
 }
 
-/* .contact-form-close-btn {
+.contact-form-close-btn {
   position: absolute;
-  top: 8;
-  right: 8;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
-  text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-} */
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.contact-form-close-icon {
+  width: 11px;
+  height: 11px;
+  fill: #000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-close-btn:hover .contact-form-close-icon {
+  fill: var(--accent-color);
+}
 
 /* Примеры работ */
 
