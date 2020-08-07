@@ -527,7 +527,6 @@
                 required
                 placeholder="E-mail"
               />
-
               <button type="submit" class="button">
                 <span class="subscribe-text">Подписаться</span>
                 <svg class="subscribe-icon" width="24" height="24">
@@ -548,7 +547,7 @@
               type="text"
               name="user-name"
               id="user-name"
-              class="contact-form-item"
+              class="contact-form-item" placeholder=" "
               required
             />
             <label class="contact-form-label" for="user-name">Имя</label>
@@ -562,6 +561,7 @@
               name="user-phone"
               id="user-phone"
               class="contact-form-item"
+              placeholder=" "
               required
             />
             <label class="contact-form-label" for="user-phone">Телефон</label>
@@ -574,7 +574,7 @@
               type="email"
               name="user-email"
               id="user-email"
-              class="contact-form-item"
+              class="contact-form-item" placeholder=" "
               required
             />
             <label class="contact-form-label" for="user-email">Почта</label>
@@ -583,12 +583,12 @@
             </svg>
           </div>
           <div class="contact-form-wrapper text-area">
-            <textarea name="comment" id="comment" class="contact-form-item comment"></textarea>
+            <textarea name="comment" id="comment" placeholder=" " class="contact-form-item comment"></textarea>
             <label class="contact-form-label-comment" for="comment">Комментарий</label>
           </div>
-          <div class="checkbox">
-            <label><input class="visually-hidden" type="checkbox" value="accept-policy"><span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a>
-            </span></label>
+          <div class="checkbox">            
+            <label class="checkbox-text"><input class="checkbox-item visually-hidden" type="checkbox" value="accept-policy"><span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a>
+            </label>            
          </div>
           <button type="submit" class="contact-form-btn">Отправить</button>
         </form>
