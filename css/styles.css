@@ -702,7 +702,7 @@ html {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--text-color);
-  transition-property: color;
+  transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -721,7 +721,8 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-item:focus {
+.contact-form-item:focus,
+.contact-form-item:not(:placeholder-shown) {
   border: 1px solid var(--accent-color);
 }
 
@@ -750,7 +751,7 @@ html {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--text-color);
-  transition-property: color;
+  transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
